@@ -38,7 +38,7 @@
   </div>
 </template>
 <script>
-import SidebarLink from "./SidebarLink.vue";
+import SidebarLink from './SidebarLink.vue';
 
 export default {
   components: {
@@ -47,23 +47,23 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD",
+      default: 'Vue MD',
     },
     sidebarBackgroundImage: {
       type: String,
-      default: require("@/assets/img/sidebar-2.jpg"),
+      default: require('@/assets/img/sidebar-2.jpg'),
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png"),
+      default: require('@/assets/img/vue-logo.png'),
     },
     sidebarItemColor: {
       type: String,
-      default: "green",
-      validator: (value) => {
-        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
-        return acceptedValues.indexOf(value) !== -1;
-      },
+      default: 'ffffff',
+      // validator: (value) => {
+      //   let acceptedValues = ['', 'purple', 'blue', 'green', 'orange', 'red'];
+      //   return acceptedValues.indexOf(value) !== -1;
+      // },
     },
     sidebarLinks: {
       type: Array,
