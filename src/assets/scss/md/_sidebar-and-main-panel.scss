@@ -176,6 +176,9 @@
     position: relative;
     padding: $padding-base 0;
     z-index: 4;
+    width: fit-content;
+    height: auto;
+    margin: auto;
 
     &:after {
       content: '';

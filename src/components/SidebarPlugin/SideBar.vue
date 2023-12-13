@@ -6,19 +6,19 @@
     :style="sidebarStyle"
   >
     <div class="logo">
-      <a href="#" class="simple-text logo-mini">
+      <a href="#">
         <div class="logo-img">
           <img :src="imgLogo" alt="" />
         </div>
       </a>
 
-      <a
+      <!-- <a
         href="https://www.creative-tim.com/product/vue-material-dashboard"
         target="_blank"
         class="simple-text logo-normal"
       >
         {{ title }}
-      </a>
+      </a> -->
     </div>
     <div class="sidebar-wrapper">
       <slot name="content"></slot>
@@ -55,7 +55,7 @@ export default {
     },
     imgLogo: {
       type: String,
-      default: require('@/assets/img/vue-logo.png'),
+      default: require('@/assets/img/Group-1605.svg'),
     },
     sidebarItemColor: {
       type: String,
