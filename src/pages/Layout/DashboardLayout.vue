@@ -35,20 +35,20 @@
         <md-icon>notifications</md-icon>
         <p>Notifications</p>
       </sidebar-link>
-      <sidebar-link to="/upgrade" class="active-pro">
+      <!-- <sidebar-link to="/upgrade" class="active-pro">
         <md-icon>unarchive</md-icon>
         <p>Upgrade to PRO</p>
-      </sidebar-link>
+      </sidebar-link> -->
     </side-bar>
 
     <div class="main-panel">
       <top-navbar></top-navbar>
 
-      <fixed-plugin
+      <!-- <fixed-plugin
         :color.sync="sidebarBackground"
         :image.sync="sidebarBackgroundImage"
       >
-      </fixed-plugin>
+      </fixed-plugin> -->
 
       <dashboard-content> </dashboard-content>
 
@@ -58,11 +58,11 @@
 </template>
 
 <script>
-import TopNavbar from "./TopNavbar.vue";
-import ContentFooter from "./ContentFooter.vue";
-import DashboardContent from "./Content.vue";
-import MobileMenu from "@/pages/Layout/MobileMenu.vue";
-import FixedPlugin from "./Extra/FixedPlugin.vue";
+import TopNavbar from './TopNavbar.vue';
+import ContentFooter from './ContentFooter.vue';
+import DashboardContent from './Content.vue';
+import MobileMenu from '@/pages/Layout/MobileMenu.vue';
+import FixedPlugin from './Extra/FixedPlugin.vue';
 
 export default {
   components: {
@@ -70,12 +70,12 @@ export default {
     DashboardContent,
     ContentFooter,
     MobileMenu,
-    FixedPlugin,
+    // FixedPlugin,
   },
   data() {
     return {
-      sidebarBackground: "green",
-      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
+      sidebarBackground: 'blue',
+      sidebarBackgroundImage: require('@/assets/img/chateu.jpg'),
     };
   },
 };

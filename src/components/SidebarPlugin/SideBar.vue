@@ -6,19 +6,19 @@
     :style="sidebarStyle"
   >
     <div class="logo">
-      <a href="#" class="simple-text logo-mini">
+      <a href="#">
         <div class="logo-img">
           <img :src="imgLogo" alt="" />
         </div>
       </a>
 
-      <a
+      <!-- <a
         href="https://www.creative-tim.com/product/vue-material-dashboard"
         target="_blank"
         class="simple-text logo-normal"
       >
         {{ title }}
-      </a>
+      </a> -->
     </div>
     <div class="sidebar-wrapper">
       <slot name="content"></slot>
@@ -38,7 +38,7 @@
   </div>
 </template>
 <script>
-import SidebarLink from "./SidebarLink.vue";
+import SidebarLink from './SidebarLink.vue';
 
 export default {
   components: {
@@ -47,23 +47,23 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD",
+      default: 'Vue MD',
     },
     sidebarBackgroundImage: {
       type: String,
-      default: require("@/assets/img/sidebar-2.jpg"),
+      default: require('@/assets/img/sidebar-2.jpg'),
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png"),
+      default: require('@/assets/img/Group-1605.svg'),
     },
     sidebarItemColor: {
       type: String,
-      default: "green",
-      validator: (value) => {
-        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
-        return acceptedValues.indexOf(value) !== -1;
-      },
+      default: 'ffffff',
+      // validator: (value) => {
+      //   let acceptedValues = ['', 'purple', 'blue', 'green', 'orange', 'red'];
+      //   return acceptedValues.indexOf(value) !== -1;
+      // },
     },
     sidebarLinks: {
       type: Array,
